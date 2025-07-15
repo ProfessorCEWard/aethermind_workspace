@@ -49,3 +49,4 @@ jobs:
 
       - name: Container security scan
         uses: aquasecurity/trivy-action@0.32.0
+
