@@ -47,6 +47,8 @@ jobs:
         run: |
           python -m poetry run pytest --cov=orchestrator --cov-fail-under=100
 
-      - name: Container security scan
+      - name: Trivy filesystem scan # Changed name of the step
         uses: aquasecurity/trivy-action@0.32.0
-
+        with:
+          scan-type: fs # Changed scan-type to fs
+          scan-path: . # Added scan-path to target current directory
