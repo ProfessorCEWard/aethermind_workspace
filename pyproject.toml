@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aethermind_workspace"
+packages = [
+  { include = "orchestrator", from = "." }
+]
+version = "0.0.0"
+description = "Official project workspace for AetherMind Orchestrator deployments."
+authors = ["Ward’s Way Enterprises <info@wardsway.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aethermind-orchestrator = { path = "orchestrator", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+isort = "*"
+ruff = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+mutmut = "*"
