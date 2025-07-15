@@ -48,4 +48,4 @@ jobs:
           python -m poetry run pytest --cov=orchestrator --cov-fail-under=100
 
       - name: Container security scan
-        uses: aquasecurity/trivy-action@v0
+        uses: aquasecurity/trivy-action@v0.32.0
