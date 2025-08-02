@@ -1,3 +1,5 @@
+# institutional_compliance_badge.md
+
 ✅ INSTITUTIONAL COMPLIANCE BADGE — AetherMind™ Workspace
 
 All Phase 1 compliance gates successfully met:
@@ -12,5 +14,5 @@ All Phase 1 compliance gates successfully met:
 
 This badge certifies AetherMind™ Workspace is CI-verified, pre-commit clean, and institutional-grade hardened — ready for Phase 2: Planner Scaffold Development.
 
-"Build What Has Not Been Built."  
+"Build What Has Not Been Built."
 — Institutional Standard Achieved
