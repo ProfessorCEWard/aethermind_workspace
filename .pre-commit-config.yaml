@@ -1,32 +1,38 @@
+# AetherMind™ Platinum Pre-Commit Baseline
+# File: .pre-commit-config.yaml
+# Organs: 🧠 Brain, Governance Firewall
+# Phase: 4 (Feedback: Integrity Baseline)
+# Artefact ID: GA-20250801-21
+# Compliance: v3.0, Stepwise Ops Protocol
+
 repos:
   - repo: https://github.com/psf/black
-    rev: 25.1.0
+    rev: 24.3.0
     hooks:
       - id: black
         language_version: python3.11
 
-  - repo: https://github.com/pycqa/flake8
-    rev: 7.3.0
-    hooks:
-      - id: flake8
-        language_version: python3.11
-
-  - repo: https://github.com/pre-commit/mirrors-isort
-    rev: v5.10.1
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
     hooks:
       - id: isort
         language_version: python3.11
 
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        language_version: python3.11
+
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.17.0
+    rev: v1.10.0
     hooks:
       - id: mypy
         language_version: python3.11
 
-default_language_version:
-  python: python3.11
-
-ci:
-  autoupdate_schedule: monthly
-
-# AetherMind™ Institutional Governance Artefact ID: GA-20250728-04
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
